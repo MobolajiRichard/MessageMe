@@ -15,7 +15,7 @@ function MainChat({messages}) {
           </span>
       </p>
       ))} 
-      {(!messages || messages.length === 0)  && <p className='chat_message'>Please choose a group or create one to begin chatting.</p>}
+      {(!messages || messages.length === 0)  && <p className='chat_message'>Please choose a group or create one to begin chatting. </p>}
     </div>
   )
 }
