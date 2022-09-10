@@ -1,0 +1,126 @@
+.main_container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+}
+.main_header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 0 2%;
+    background-color: lightgray;
+    height: fit-content;
+}
+
+.main_header_info{
+    flex: 1;
+    margin-left: 2em;
+}
+
+.main_header_info>p{
+    font-size: 80%;
+    white-space: wrap;
+    word-break: break-all;
+}
+
+.main_main{
+    background-image: url(../chatWallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: 1% 3%;
+    overflow: auto;
+    height: 100%;
+}
+
+.mainchat{
+    height: 100%;
+}
+.main_footer{
+    display: flex;
+    align-items: center;
+    height: 3em;
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 0.1em;
+}
+
+.main_footer_info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main_footer_info>form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex: 0.6; */
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    height: 2em;
+    padding:0 1%;
+}
+.main_footer_info>form>input{
+    border: none;
+    border-radius: 20px;
+    outline-width: 0;
+    text-indent: 10px;
+    flex: 1;
+}
+
+.main_footer_info>form>.MuiSvgIcon-root{
+    color: rgba(0, 0, 0, 0.1);
+}
+.main_footer_info>form>.MuiSvgIcon-root:hover{
+    color: lightgray;
+}
+.chat_message{
+    position: relative;
+    font-size: 1rem;
+    padding: 20px;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 2rem;
+    white-space: wrap;
+}
+.chat_sender{
+    position: absolute;
+    top: -20px;
+    font-weight: 800;
+    font-size: x-small;
+
+}
+.chat_timestamp{
+    margin-left: 0.3rem;
+    font-size: xx-small;
+}
+
+.chat_receiver{
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    .main_container{
+        height: 100vh;
+    }
+    
+    .main_header_info>p{
+        font-size: 45%;
+    }
+        .menu{
+          display: block;
+        }
+    .icons{
+        display: none;
+    }  
+}
